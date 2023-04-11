@@ -9,7 +9,7 @@ const port = 3000;
 app.set('view engine', 'jsx');
 app.engine('jsx', require('jsx-view-engine').createEngine());
 
-// Mount middleware (app.use)
+// Mount middleware (app.use); parsess the data from the request; makes data accessible
 app.use(express.urlencoded({ extended: false }));
 
 // ROUTES
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/pokemon', (req, res) => {
-  res.send(pokemon);
+  res.render('Index', {});
 });
 
 app.listen(3000, () => {
