@@ -21,6 +21,13 @@ app.get('/pokemon', (req, res) => {
   res.render('Index', { pokemon: pokemon });
 });
 
+// SHOW ROUTE to return/send back ONE pokemon
+app.get('/pokemon/:indexOfPokemonArray', (req, res) => {
+  res.render('Show', {
+    pokemon: pokemon[req.params.indexOfPokemonArray],
+  });
+});
+
 app.listen(3000, () => {
   console.log('Listening on port 3000');
 });
