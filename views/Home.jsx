@@ -11,12 +11,6 @@ function Home() {
       <a href="/pokemon/new">Create a Pokemon!</a>
       <br />
       <br />
-      <a
-        href="https://www.fantasynamegenerators.com/pokemon-names.php"
-        target="_blank"
-      >
-        Pokemon Name Generator to Help You!
-      </a>
     </div>
   );
 }
