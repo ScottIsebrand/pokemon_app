@@ -7,7 +7,7 @@ function Show(props) {
     <div>
       <a href="/">Home</a>
       <br />
-      <a href="/logs">Go to Index of All the Pokemon</a>
+      <a href="/pokemon">Go to Index of Pokemon</a>
       <br />
       <h1>Gotta Catch 'Em All!</h1>
       <h2>{pokemon.name}</h2>

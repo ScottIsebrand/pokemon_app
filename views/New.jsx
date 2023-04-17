@@ -5,7 +5,7 @@ function New() {
     <div>
       <a href="/">Home</a>
       <br />
-      <a href="/logs">Go to Index of All the Pokemon</a>
+      <a href="/pokemon">Go to Index of Pokemon</a>
       <br />
       <h1>New Pokemon</h1>
       {/*Note: action is the route; it's telling the FORM where to go  */}

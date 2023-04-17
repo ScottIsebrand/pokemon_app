@@ -5,7 +5,7 @@ function NotFound() {
     <div>
       <a href="/">Home</a>
       <br />
-      <a href="/logs">Go to Index of All the Pokemon</a>
+      <a href="/pokemon">Go to Index of Pokemon</a>
       <br />
       <h1>404 - Page Not Found</h1>
     </div>
