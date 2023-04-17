@@ -15,13 +15,13 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('jsx-view-engine').createEngine());
 
 // === MIDDLEWARE
-// == Middleware (app.use): parsess the data from the request; makes data accessible
+// == Middleware (app.use): parsess the incoming data from the request so we don't need to use extended file name; makes data accessible
 app.use(express.urlencoded({ extended: false }));
 // == Middleware (app.use): override using a query value so that when we make request from form
 app.use(methodOverride('_method'));
 // == Middleware (app.use): body-parser
 app.use((req, res, next) => {
-  console.log(req.url);
+  // console.log(req.url);
   next();
 });
 

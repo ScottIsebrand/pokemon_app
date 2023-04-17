@@ -1,10 +1,15 @@
 const React = require('react');
 
+// The function below could be structured as an arrow function, as on the line before
+// const Index = ({pokemon}) => {}
+
 function Index(props) {
   const { pokemon } = props;
 
   return (
     <div>
+      <a href="/">Home</a>
+      <br />
       <a href="/pokemon/new">Create a Pokemon</a>
       <h1>See All The Pokemon!</h1>
       <ul>

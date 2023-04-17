@@ -3,6 +3,10 @@ const React = require('react');
 function New() {
   return (
     <div>
+      <a href="/">Home</a>
+      <br />
+      <a href="/logs">Go to Index of All the Pokemon</a>
+      <br />
       <h1>New Pokemon</h1>
       {/*Note: action is the route; it's telling the FORM where to go  */}
       <form action="/pokemon" method="POST">
